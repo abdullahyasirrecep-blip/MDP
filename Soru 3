@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    char harf;
+    printf("Bir harf giriniz: ");
+    scanf(" %c", &harf);
+
+    if (harf=='a' || harf=='e' || harf=='i' || harf=='o' || harf=='u' ||
+        harf=='A' || harf=='E' || harf=='I' || harf=='O' || harf=='U') {
+        printf("Sesli harf\n");
+    } else {
+        printf("Sessiz harf\n");
+    }
+
+    return 0;
+}
