@@ -1,1 +1,30 @@
+#include <stdio.h>
+
+int main() {
+    int i, j, notu, toplam;
+    float ortalama;
+
+    for (i = 1; i <= 5; i++) {
+        toplam = 0;
+        printf("\n%d. ogrencinin 4 notunu giriniz:\n", i);
+
+        for (j = 1; j <= 4; j++) {
+            printf("%d. not:\n", j);   
+            scanf("%d", &notu);
+            toplam += notu;
+        }
+
+        ortalama = toplam / 4.0;
+
+        printf("%d. ogrencinin ortalamasi: %.2f\n", i, ortalama);
+
+        if (ortalama < 50) {
+            printf("Durum: Kaldi\n\n");
+        } else {
+            printf("Durum: Gecti\n\n");
+        }
+    }
+
+    return 0;
+}
 
